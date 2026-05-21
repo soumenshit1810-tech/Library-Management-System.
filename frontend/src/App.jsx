@@ -18,6 +18,7 @@ import AllOrders from './pages/AllOrders.jsx'
 import AddBook from './pages/AddBook.jsx'
 import UpdateBook from './pages/UpdateBook.jsx'
 import AboutUs from './pages/AboutUs.jsx'
+import ChatBot from './components/ChatBot/ChatBot.jsx'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -48,6 +49,7 @@ const App = () => {
         <Route path='/view-book-details/:id' element={<ViewBookDetails />} />
         
       </Routes>
+      <ChatBot />
       <Footer />
     </>
   )
